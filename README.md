@@ -24,7 +24,6 @@ Before running the tests, ensure you have the following installed:
 
 - **Node.js** (v14 or higher) → [Download Node.js](https://nodejs.org/)
 - **npm** (comes with Node.js)
-
 ---
 
 ### 1️⃣ **Clone the Repository**
@@ -37,6 +36,19 @@ Run this command in the clonned repository - npx install cypress --save-dev
 ### 3️⃣ **Install Dependencies**
 Run this command in the clonned repository - npm install
 
+## Add Cypress Environment File to the Repository
+
+1. **Create a Cypress environment file** (`cypress.env.json`) in the root of the repository.
+
+2. **Add the following content** to the `cypress.env.json` file:
+
+```json
+{
+  "USERNAME": "standard_user",
+  "USER_PASSWORD": "secret_sauce",
+  "INVALID_USER_PASSWORD": "invalidpass"
+}
+```
 ### 4️⃣ **Run the tests via UI**
 Run the command - npx cypress open -> select e2e testing -> select browser -> select any test
 
