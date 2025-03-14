@@ -1,1 +1,1 @@
-# ui-api-automation-tests-
+# ui-api-automation-tests
