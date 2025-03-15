@@ -16,11 +16,8 @@ class LoginPage extends BasePage {
     return cy.get('[data-test="login-button"]')
   }
 
-  getCart() {
-    return cy.get('[data-test="shopping-cart-link"]')
-  }
 
-  getErrorMessage() {
+  getLoginErrorMessage() {
     return cy.get('[data-test="error"]')
   }
 
